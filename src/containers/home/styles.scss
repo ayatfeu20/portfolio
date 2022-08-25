@@ -1,0 +1,273 @@
+.home {
+  position:relative;
+  height: 100%;
+  display: flex;
+  flex-direction:row;
+  display: flex;
+  align-items: center;
+  
+  
+  
+
+  
+  
+ 
+.right{
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  .home__bild{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3rem;
+         
+
+
+    img{
+      width: 40%;
+      height: 75%;
+      padding: 0px;
+      border: 5px solid #ffd700;
+      border-radius: 15px 50px 800px 5px;
+      box-shadow: 10px 10px 10px #999;
+           
+    }
+  }
+}
+
+  .left{
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    
+    
+    
+    
+
+  .home__text-wrapper {
+    display: inline-block;
+    margin: 0rem 4rem;
+    
+    
+    
+
+    h1 {
+      color: var(--yellow-theme-main-color);
+      font-weight: 500;
+      font-size: 6.5vw;
+      line-height: 20vh;
+      position: relative;
+      overflow: hidden;
+      white-space: nowrap;
+      margin-left: 6rem;
+      animation: typingEffectAnimation 2.5s steps(20, end);
+      font-family: 'Helvetica Neue', sans-serif;
+    }
+  
+  }
+  .home__paragraph{
+    display:flex;
+    
+    p {
+      color:rgb(253, 252, 253);
+      font-weight: 50;
+      font-size: calc(1.5rem + 0.5vw);
+      line-height: calc(2.4rem + 0.8vw);
+      
+      overflow: hidden;
+      white-space: nowrap;
+     margin-left: 26rem;
+    animation: typingEffectAnimation 2.5s steps(20, end);
+    font-family: 'Helvetica Neue', sans-serif;
+    text-align: center;
+    
+
+    }
+  }
+  .home__contact-me{
+    display: flex;
+    margin-top: 25px;
+    margin-left: 18rem;
+    
+
+    a{
+      cursor: pointer;
+      padding: 10px;
+      width: 175px;
+      text-align: center;
+      font-size: 2rem;
+      background: transparent;
+      color: var(--yellow-theme-main-color);
+      border: 1.5px solid var(--yellow-theme-main-color);
+      border-radius: 4px;
+      font-weight: 500;
+      margin-right: 10px;
+      text-decoration: none;
+      font-family: 'Helvetica Neue', sans-serif;
+
+      &:hover{
+        background: var(--yellow-theme-main-color);
+        color: #000000;
+      }
+    }
+  }
+
+    .home__icons{
+      position: absolute;
+      bottom: -3rem;
+      width: 100%;
+      display: flex;
+      padding-left: 30rem;
+      list-style: none;
+      align-items: center;
+      
+      
+
+    
+    a {
+      padding: 0px 0px;
+      font-size:30px;
+      line-height: 2px;
+      margin-left: 2rem;
+
+      .link:hover {
+        color: rgb(253, 252, 253);
+        transform: translateY(-4px);
+      }    
+     
+  }
+}
+}
+  
+}
+
+
+
+@media only screen and (max-width: 550px) {
+   .home{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    height: 40%;
+    bottom: 17rem;
+
+    
+    .left{
+      align-items: center;
+      
+    
+  .home__text-wrapper{
+    padding-left: 18rem;
+    margin-bottom: -2rem;
+        
+  }
+    
+
+ .home__paragraph {
+  p{
+ padding-left: 4rem;
+ margin-top: -3rem;
+ }
+}
+
+.home__contact-me{
+  padding-left: 6rem;
+  
+  
+  a{
+    width: 75%;
+    
+  }
+}
+    }
+
+  
+  .home__bild{
+      flex-direction: column;
+        width: 250%;
+        margin-bottom: 3rem;
+   
+  }
+  }
+  
+  }
+
+
+@media only screen and (min-width: 551px) and (max-width: 768px) {
+  .home{
+    flex-direction: column;
+    align-items: center;
+    bottom: 20rem;
+  
+  }
+ 
+}
+
+@media only screen and (min-width: 769px) and (max-width: 990px) {
+  .home{
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 57%;
+    height: 20%;
+    bottom: 15rem;
+
+    
+    .left{
+      align-items: center;
+      
+    
+  .home__text-wrapper{
+    padding-left: 5rem;
+    margin-bottom: -2rem;
+    h1{
+      font-size: 5vw;
+    }
+        
+  }
+    
+
+ .home__paragraph {
+  p{
+ padding-right: 8rem;
+ margin-top: -3rem;
+ }
+}
+
+.home__contact-me{
+
+  padding-right: 6rem;
+  margin-bottom: 2rem;
+  a{
+    width: 50%;
+  }
+}
+    }
+
+  
+  .home__bild{
+      width: 3500%;
+      margin-top: 10rem;
+      
+        
+   
+  }
+
+ 
+
+
+
+  }
+  
+  }
+@keyframes typingEffectAnimation {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 100%;
+  }
+}

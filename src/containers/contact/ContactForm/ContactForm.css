@@ -1,0 +1,57 @@
+.form {
+    padding: 1rem;
+    border-radius: .5rem;
+    width: 100%;
+}
+
+.validationMessage {
+    font-size: 1rem;
+    color: var(--yellow-theme-main-color);
+    font-family: 'Helvetica Neue', sans-serif;
+    text-align: center;
+}
+
+.success {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size:small;
+    color: rgb(140, 235, 140);
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+
+.sentIcon {
+    margin-left: .5rem;
+    font-size: 2rem;
+}
+
+.inputGroup {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+.formLabel{
+    margin-bottom: .5rem;
+    color: var(--yellow-theme-main-color);
+    font-size: small;
+    font-family: 'Helvetica Neue', sans-serif;
+}
+
+.formInput{
+    padding: .8rem;
+    border-radius: .2rem;
+}
+
+.textarea {
+    padding: .8rem;
+    border-radius: .2rem;
+    resize: vertical;
+    min-height: 90px;
+}
+
+.btnDiv {
+    padding: 2rem 0;
+}
